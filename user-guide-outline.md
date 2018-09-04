@@ -154,14 +154,6 @@ TODO
 
 #### 4.1.2 停靠点
 
-机器人的电量等级：
-
-低电量报警阈值：该阈值线表示当机器人低于该线时会自动去充电，此时不会再接受新的业务订单，如果无空闲充电点位，机器人会寻找停靠点进行自动泊车；
-
-电量充足阈值：该阈值线表示当机器人高于该线时会告知调度系统允许派发新的业务订单；
-
-电量不充足：当机器人的电量处于报警阈值与充足阈值之间时，成为电量不充足，此时机器人依然能够正常接受业务订单的派遣；
-
 停靠点指机器人可在此较长时间停靠占用的位置，在没有未执行的业务订单时，机器人会自动寻找停靠点进行自动泊车，等待分配新的业务订单；如果机器人的电量处于低电量报警阈值之下，并且不存在空闲的充电点位，机器人也会回到停靠点。
 
 ![1535682315716](C:\Users\dell\AppData\Local\Temp\1535682315716.png)
@@ -276,15 +268,11 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 |   当前业务订单   |       当前执行的业务订单名称       | 当前业务订单序列 |      业务订单序列名称      |
 | 可执行的业务类型 |    机器人能够完成的业务类型种类    |   自主充电类型   |       机器人充电种类       |
 
-### 4.7 互斥区
-
-TODO：删掉，与5.4.5重复
-
-### 4.8 元素组
+### 4.7 元素组
 
 TODO
 
-### 4.9 元属性
+### 4.8 元属性
 
 TODO
 
@@ -458,6 +446,8 @@ TODO
 
 ![1535698012024](C:\Users\dell\AppData\Local\Temp\1535698012024.png)
 
+![1536042404574](C:\Users\dell\AppData\Local\Temp\1536042404574.png)
+
 #### 5.4.12 业务订单序列视图
 
 ![1535698061432](C:\Users\dell\AppData\Local\Temp\1535698061432.png)
@@ -538,25 +528,68 @@ TODO
 
 ![1535701719379](C:\Users\dell\AppData\Local\Temp\1535701719379.png)
 
-
+使用 Roboshop 编辑完成整个场景中的路线之后，点击导出功能，选择导出 RoboRoute 地图，将 Roboshop 的 smap 地图转换成 RoboRoute 的XML地图（ smap 地图编辑参考 Roboshop 使用手册）。 
 
 ### 6.2 切换至编辑模式
 
+打开Viewer，默认模式为编辑模式；手动模式切换需要选择文件菜单下的模式，然后选择编辑模式或者操作模式；或者使用快捷键方式，Alt + M（编辑模式）、Alt + O （操作模式）。
+
 ### 6.3 载入场景
+
+选择文件—>导入场景，在导入场景对话框中选择你要导入场景的路径，选择打开，场景自动加载到场景视图中。
+
+![1535960793966](C:\Users\dell\AppData\Local\Temp\1535960793966.png)
 
 ### 6.4 添加机器人
 
+![1535960935130](C:\Users\dell\AppData\Local\Temp\1535960935130.png)
+
+![1535969811814](C:\Users\dell\AppData\Local\Temp\1535969811814.png)
+
+在编辑模式下，选择机器人工具进行场景中机器人的添加，在机器人名称栏编辑机器人铭牌上的机器人ID，机器人的实际车长，路线颜色，低电量报警阈值以及充足阈值，最大正向速度与最大反向速度可以根据 Roboshop 的 smap 中的路线速度进行设定，需要根据不同的车型选择自主充电类型。
+
 #### 6.4.1 编辑可执行的业务类型
+
+TODO
 
 #### 6.4.2 编辑自主充电类型
 
+TODO
+
 ### 6.5 添加工作站信息
+
+![1535970132005](C:\Users\dell\AppData\Local\Temp\1535970132005.png)
+
+![1535970156222](C:\Users\dell\AppData\Local\Temp\1535970156222.png)
+
+在编辑模式下，选择工具栏工作站选项添加工作站，然后在工作站信息栏编辑关键信息，设定该工作站的名称，如果该工作站是由 smap 自动导出生成，那么名称不变，如果是手动添加的工作站，那么需要重新命名，选择该工作站的类型，该类型必须在工作站类型中存在，否则路径规划会报错。
 
 ### 6.6 保存场景
 
+在编辑模式下，选择文件—>保存场景，或者使用快捷键 Ctrl + S 保存当前编辑的场景；使用文件—>场景另存为，可以将场景重命名保存到文件夹。
+
 ### 6.7 显示场景信息
 
+插入图片：
+
+选择文件—>显示场景信息，可以显示场景中的如下信息：
+
+| 字段 | 释义 |
+| :--: | :--: |
+|      |      |
+|      |      |
+|      |      |
+|      |      |
+|      |      |
+|      |      |
+
+
+
 ### 6.8 Viewer 向 Kernel 同步场景
+
+编辑完成的场景，或者最新导入的场景，都需要同步到 kernel 并且在 Kernel 中进行初始化之后才能使用，选择文件—>将场景同步至 Kernel 功能，Viewer 会在软件上方的连接信息中显示所连接到的 Kernel IP和端口号，然后在 Kernel 中进行初始化操作，初始化完成后，在 Viewer 中选择文件—>模式—>操作模式，在经过一段非常美妙的动画之后，Viewer 会切换到操作模式，此时界面如下：
+
+
 
 ### 6.9 Viewer 导入 Kernel 当前场景
 
@@ -598,53 +631,320 @@ TODO
 
 ### 8.1 切换至操作模式
 
+在将模型同步到 Kernel 以后，并在 Kernel 中将机器人初始化后，选择文件—>模式，切换到操作模式，或者使用快捷键 Alt + O；此时视图窗口中会出现机器人窗口和场景视图窗口；界面如下：
+
 ### 8.2 新建业务订单
+
+创建业务订单的方式有三种：
+
+1、使用创建业务订单功能：单击添加按钮，选择需要目的地工作站以及所要执行的动作，在机器人复选框中可以指定执行该业务订单的机器人，或者选择自动分配机器人。
+
+![1536026306709](C:\Users\dell\AppData\Local\Temp\1536026306709.png)
+
+2、使用 Web API 创建业务订单：Web API 是与调度对接的标准协议，协议提供：创建业务订单，撤回业务订单，查询业务订单状态和机器人状态等功能，详情请看11.5 Web API 链接。
+
+3、使用自动生成业务订单插件创建业务订单：详情请看10.2小节。
 
 ### 8.3 业务订单视图
 
+![1536026193488](C:\Users\dell\AppData\Local\Temp\1536026193488.png)
+
+|      字段      |                         释义                         |
+| :------------: | :--------------------------------------------------: |
+|      Name      |                 订单名称，具有唯一性                 |
+|   始发工作站   |           该订单执行所要前往的第一个工作站           |
+|   终点工作站   |          该订单执行所要前往的最后一个工作站          |
+|   指定机器人   | 可以选择某个特定的机器人或者由调度系统自动分配机器人 |
+| 执行中的机器人 |            该订单被分配至某个特定的机器人            |
+|     Status     |                      订单的状态                      |
+|      序列      |     订单所属的订单序列，只有存在订单依赖时会显示     |
+
+
+
 #### 8.3.1 筛选业务订单列表
+
+![1536027944266](C:\Users\dell\AppData\Local\Temp\1536027944266.png)
+
+业务订单筛选工具：
+
+|                    工具                    |                  描述                   |
+| :----------------------------------------: | :-------------------------------------: |
+|       无法规划的业务订单（状态=RAW）       |       查询订单状态为RAW的业务订单       |
+|   待派遣的业务订单（状态=DISPATCHABLE）    |  查询订单状态为DISPATCHABLE的业务订单   |
+| 正在处理的业务订单（状态=BEING_PROCESSED） | 查询订单状态为BEING_PROCESSED的业务订单 |
+|     已完成的业务订单（状态=FINISHED）      |    查询订单状态为FINISHED的业务订单     |
+|       失败的业务订单（状态=FAILED）        |     查询订单状态为FAILED的业务订单      |
+|                撤回业务订单                |  撤回业务订单，支持单个撤回和批量撤回   |
+
+
 
 #### 8.3.2 查看业务订单状态
 
+业务订单 Status 分析：
+
+Active：订单存在依赖，需要等待被依赖订单处理完成后才能进行派遣；
+
+Unrouteable：订单非法，起始点位无法到达，路径无法规划；
+
+DISPATCHABLE：单例订单，且订单合法，允许派遣机器人；
+
+RAW：订单非法，订单中存在非场景中的元素，请检查元素详细信息；
+
+BEING_PROCESSED：订单合法，且已有机器人正在执行该订单；
+
+FINISHED：订单合法，且该订单已成功执行完成；
+
+FAILED：订单合法，但是由于人为撤回订单或者调度自动撤回订单，导致订单失败；
+
 #### 8.3.3 撤销业务订单
+
+撤销业务订单支持按照订单名称撤回和按照机器人撤回两种方式：
+
+按照订单名称撤回：选中您要撤回的一个或几个订单，然后单击撤回业务订单按钮，将订单撤回。
+
+![1536028788224](C:\Users\dell\AppData\Local\Temp\1536028788224.png)
+
+按照机器人撤回：在需要撤回订单的机器人图标上单击鼠标右键，弹出如下菜单栏，选择撤销业务订单，根据实际需求选择撤销订单的方式。
+
+![1536029060647](C:\Users\dell\AppData\Local\Temp\1536029060647.png)
+
+![1536029337758](C:\Users\dell\AppData\Local\Temp\1536029337758.png)
+
+|   订单撤回方式   |                        释义                        |
+| :--------------: | :------------------------------------------------: |
+|  并到达下一节点  | 撤销当前执行的订单，但机器人会继续前进到下一个节点 |
+| 并立即停止机器人 |         撤销当前执行的订单，机器人立即停止         |
+
+
 
 ### 8.4 业务订单序列视图
 
+TODO
+
 #### 8.4.1 查看业务订单序列状态
+
+TODO
 
 ### 8.5 机器人视图
 
+![1536030862126](C:\Users\dell\AppData\Local\Temp\1536030862126.png)
+
+机器人视图窗口包含：机器人名称、机器人图标、实时电量、在线状态、机器人状态以及机器人当前位置。
+
 #### 8.5.1 机器人图标说明
+
+|                             图标                             |           释义           |                             图标                             |          释义          |
+| :----------------------------------------------------------: | :----------------------: | :----------------------------------------------------------: | :--------------------: |
+| ![1536031694042](C:\Users\dell\AppData\Local\Temp\1536031694042.png) |   正常机器人无负载状态   | ![1536031726307](C:\Users\dell\AppData\Local\Temp\1536031726307.png) |  故障机器人无负载状态  |
+| ![1536031751403](C:\Users\dell\AppData\Local\Temp\1536031751403.png) | 正常机器人无负载充电状态 | ![1536031782978](C:\Users\dell\AppData\Local\Temp\1536031782978.png) |   正常机器人负载状态   |
+| ![1536031814240](C:\Users\dell\AppData\Local\Temp\1536031814240.png) |    故障机器人负载状态    | ![1536031851092](C:\Users\dell\AppData\Local\Temp\1536031851092.png) | 正常机器人负载充电状态 |
+
+
 
 #### 8.5.2 机器人状态
 
+机器人状态解析：
+
+UNAVAILABLE：机器人未连接到调度服务器，处于离线状态；
+
+IDLE：机器人连接到调度服务器，处于在线可用状态；
+
+ERROR：机器人故障或执行任务失败出现异常，处于不可用状态；
+
+EXECUTING：机器人在线，并正在执行业务订单，处于执行状态；
+
+CHARGING：机器人在线，并正在执行充电操作，处于执行状态；
+
+UNKNOWN：机器人不属于场景之中，处于不可用状态；
+
 #### 8.5.3 机器人在线状态
+
+机器人在线状态解析：
+
+离线：机器人未连接到调度服务器或者机器人仅标记场景中的位置；
+
+在线不可用：机器人连接到调度服务器且机器人状态为不可用状态；
+
+在线可用：机器人连接到调度服务器且机器人状态为可用状态；
 
 #### 8.5.4 机器人电量
 
+机器人的电量等级：
+
+低电量报警阈值：该阈值线表示当机器人低于该线时会自动去充电，此时不会再接受新的业务订单，如果无空闲充电点位，机器人会寻找停靠点进行自动泊车；
+
+电量充足阈值：该阈值线表示当机器人高于该线时会告知调度系统允许派发新的业务订单；
+
+电量不充足：当机器人的电量处于报警阈值与充足阈值之间时，成为电量不充足，此时机器人依然能够正常接受业务订单的派遣；
+
 #### 8.5.5 聚焦和跟踪机器人
+
+![1536032579091](C:\Users\dell\AppData\Local\Temp\1536032579091.png)
+
+在机器人图标上单击右键，弹出如上图菜单栏，聚焦机器人和跟踪机器人都是为了在复杂的场景中快速定位某台机器人而设定。
+
+聚焦机器人：该机器人的图标颜色会发生如下变化，可以快速区分需要寻找的机器人；
+
+![1536032762741](C:\Users\dell\AppData\Local\Temp\1536032762741.png)
+
+跟踪机器人：被跟踪的机器人会被动感光圈所环绕，在机器人行走的过程中，光圈会一直伴随其左右，便于人类发现该机器人；
+
+![1536032978036](C:\Users\dell\AppData\Local\Temp\1536032978036.png)
 
 #### 8.5.6 派遣机器人至节点
 
+![1536037628309](C:\Users\dell\AppData\Local\Temp\1536037628309.png)
+
+在机器人图标上单击右键，弹出如上图菜单。
+
+派遣至节点提供定点导航功能，选择派遣至节点后选择需要到达的点位，然后单击确定按钮，机器人会自动规划最优路径前往目标节点；
+
+![1536037802142](C:\Users\dell\AppData\Local\Temp\1536037802142.png)
+
+
+
 #### 8.5.7 派遣机器人至工作站
+
+派遣至工作站提供定点导航加执行动作功能，选择派遣制工作站后选择需要到达的工作站并指定到达该工作站后需要进行的动作，然后单击确定按钮，机器人会自动规划最优路径前往目标工作站；
+
+![1536037962679](C:\Users\dell\AppData\Local\Temp\1536037962679.png)
 
 #### 8.5.8 更改机器人在线状态
 
-#### 8.5.9 撤销正在执行的业务订单
+![1536039020413](C:\Users\dell\AppData\Local\Temp\1536039020413.png)
+
+在机器人图标上单击右键，弹出如上图菜单。
+
+![1536039050615](C:\Users\dell\AppData\Local\Temp\1536039050615.png)
+
+在线状态解析：
+
+|         状态         |                             释义                             |
+| :------------------: | :----------------------------------------------------------: |
+| 将机器人置为离线状态 | 断开机器人与调度服务器的连接，并从当前场景视图中移除，在线状态为离线 |
+|   仅标记机器人位置   |          将机器人在场景中的位置占用，在线状态为离线          |
+|  仅将机器人载入场景  | 将移除的机器人重新载入场景并占用当前位置，在线状态为在线不可用 |
+| 将机器人置为在线状态 | 将机器人连接到调度服务器，并可以接受业务订单派遣，在线状态为在线可用 |
+
+
 
 ### 8.6 典型操作流程
+
+
 
 ## 九、RoboRoute 配置（公司内部人员，以及集成商使用）
 
 ### 9.1 Kernel 关键配置列表
 
+|                        字段                         |         含义         |                        字段                         |         含义         |
+| :-------------------------------------------------: | :------------------: | :-------------------------------------------------: | :------------------: |
+|        kernelapp. autoEnableDriversOnStartup        |     启动自动使能     |      kernelapp. saveModelOnTerminateModelling       | 退出编辑模式自动保存 |
+|      kernelapp. saveModelOnTerminateOperating       | 退出操作模式自动保存 |  kernelapp. updateRoutingTopologyOnPathLockChange   | 路径锁定后更新拓扑图 |
+|              orderpool. sweepInterval               |       扫描间隔       |                 orderpool. sweepAge                 |     订单保存时间     |
+|              rmikernelinterface.enable              | 远程调用接口是否可用 |              rmikernelinterface.useSsl              |       是否加密       |
+|       rmikernelinterface. clientSweepInterval       |                      |          rmikernelinterface. registryHost           |                      |
+|          rmikernelinterface. registryPort           |                      |  rmikernelinterface. remoteKernelServicePortalPort  |                      |
+|   rmikernelinterface. remotePlantModelServicePort   |                      | rmikernelinterface. remoteTransportOrderServicePort |                      |
+|    rmikernelinterface. remoteVehicleServicePort     |                      |  rmikernelinterface. remoteNotificationServicePort  |                      |
+|   rmikernelinterface. remoteSchedulerServicePort    |                      |     rmikernelinterface. remoteRouterServicePort     |                      |
+|   rmikernelinterface. remoteDispatcherServicePort   |                      |        rmikernelinterface. remoteKernelPort         |                      |
+|                  ssl. keystoreFile                  |                      |                 ssl. truststoreFile                 |                      |
+|                ssl. keystorePassword                |                      |               ssl. truststorePassword               |                      |
+|                 adminwebapi.enable                  |                      |               adminwebapi.bindAddress               |                      |
+|                adminwebapi.bindPort                 |                      |                servicewebapi.enable                 |                      |
+|                servicewebapi.useSsl                 |                      |              servicewebapi.bindAddress              |                      |
+|               servicewebapi.bindPort                |                      |               servicewebapi.accessKey               |                      |
+|         servicewebapi.statusEventsCapacity          |                      |                controlcenter.enable                 |                      |
+|               controlcenter.language                |                      |          controlcenter.loggingAreaCapacity          |                      |
+|               xmlhostinterface.enable               |                      |          xmlhostinterface.ordersServerPort          |                      |
+|         xmlhostinterface.ordersIdleTimeout          |                      |          xmlhostinterface.ordersInputLimit          |                      |
+|          xmlhostinterface.statusServerPort          |                      |       xmlhostinterface.statusMessageSeparator       |                      |
+| defaultdispatcher.dismissUnroutable TransportOrders |                      |       defaultdispatcher.assignRedundantOrders       |                      |
+|          defaultdispatcher.rerouteTrigger           |                      |    defaultdispatcher.reroutingImpossibleStrategy    |                      |
+|         defaultdispatcher.parkIdleVehicles          |                      |       defaultdispatcher.rechargeIdleVehicles        |                      |
+|      defaultdispatcher.keepRechargingUntilGood      |                      | defaultdispatcher.idleVehicleRedispatchingInterval  |                      |
+|          defaultdispatcher.orderPriorities          |                      |     defaultdispatcher.orderCandidatePriorities      |                      |
+|         defaultdispatcher.vehiclePriorities         |                      |    defaultdispatcher.vehicleCandidatePriorities     |                      |
+|       defaultdispatcher.deadlineAtRiskPeriod        |                      |         defaultrecoveryevaluator.threshold          |                      |
+|        defaultrouter.routeToCurrentPosition         |                      |        defaultrouter.shortestpath.algorithm         |                      |
+|      defaultrouter.shortestpath.edgeEvaluators      |                      |         virtualvehicle.simulationTimeFactor         |                      |
+|         virtualvehicle.commandQueueCapacity         |                      |          virtualvehicle.rechargeOperation           |                      |
+|         virtualvehicle.profilesMaxFileSize          |                      |            virtualvehicle.redisServerIp             |                      |
+|           virtualvehicle.redisServerPort            |                      |             statisticscollector.enable              |                      |
+
+
+
 ### 9.2 Viewer 关键配置列表
+
+|                      字段                      |       含义       |                     字段                      |        含义        |
+| :--------------------------------------------: | :--------------: | :-------------------------------------------: | :----------------: |
+| plantoverviewapp.ignoreVehicleOrientationAngle | 忽略机器人朝向角 | plantoverviewapp.ignoreVehiclePrecisePosition | 忽略机器人精确位置 |
+|          plantoverviewapp.initialMode          |     默认模式     |           plantoverviewapp.language           |        语言        |
+|        plantoverviewapp.frameMaximized         |                  |      plantoverviewapp.frameBoundsHeight       |                    |
+|       plantoverviewapp.frameBoundsWidth        |                  |         plantoverviewapp.frameBoundsX         |                    |
+|         plantoverviewapp.frameBoundsY          |                  |     plantoverviewapp.connectionBookmarks      |                    |
+|  plantoverviewapp.useBookmarksWhenConnecting   |                  |      plantoverviewapp.locationThemeClass      |                    |
+|       plantoverviewapp.vehicleThemeClass       |                  |                  ssl.enable                   |                    |
+|               ssl.truststoreFile               |                  |            ssl.truststorePassword             |                    |
+
+
 
 ## 十、扩展插件
 
 ### 10.1 订单统计
 
+![1536044465504](C:\Users\dell\AppData\Local\Temp\1536044465504.png)
+
+订单统计提供整个场景中机器人、点位、订单的处理信息。
+
+机器人数据分析：
+
+|    字段    |               释义               |
+| :--------: | :------------------------------: |
+|    名称    |            机器人名称            |
+|  运行时间  |        机器人运行时间总和        |
+|  等待时间  | 机器人处理订单过程中等待时间总和 |
+| 订单已处理 |     机器人处理完成的订单数量     |
+|  充电时间  |        机器人充电时间总和        |
+
+点位分析：
+
+|   字段   |          释义          |
+| :------: | :--------------------: |
+|  地标点  |       地标点位ID       |
+| 占用时间 | 该点位被占用的时间总和 |
+
+订单分析：
+
+|   字段   |              释义              |
+| :------: | :----------------------------: |
+|   名称   |          业务订单名称          |
+| 时间分配 |          订单预期时间          |
+| 处理时间 |      业务订单实际处理时间      |
+|   成功   | 业务订单最终处理状态，成功与否 |
+|   超时   | 订单实际完成时间与预期时间差值 |
+
+
+
 ### 10.2 随机订单测试
+
+![1536044501121](C:\Users\dell\AppData\Local\Temp\1536044501121.png)
+
+在测试环节可以选择自动生成订单功能来创建订单，选择生成订单的条件然后勾选最下方的生成业务订单，订单就会自动创建并添加到业务订单视图中。
+
+|          参数           |                             释义                             |
+| :---------------------: | :----------------------------------------------------------: |
+|       仅创建一次        |                   创建单次订单，仅生成一次                   |
+| 少于N要被处理的业务订单 |      N是订单的数量，在订单列表中少于N个时会持续自动生成      |
+|        间隔时间         |                两次自动生成业务订单的间隔时间                |
+|      随机业务订单       | 首个参数代表每次生成订单的个数，第二个代表每个业务订单包含的订单子任务数量 |
+| 根据目的地创建业务订单  |              勾选后下方的添加新业务订单按钮可用              |
+|     添加新业务订单      |         选择截止时间和需要执行的机器人来生成业务订单         |
+|     新建订单子任务      |      选择目的地工作站以及所要执行的动作来生成订单子任务      |
+|          打开           |                   打开已编辑好的订单配置表                   |
+|          保存           |                将本次编辑作为模板保存至文件夹                |
+
+
 
 ## 十一、关于
 
