@@ -6,7 +6,7 @@
 
 RoboRoute 是上海仙知机器人科技有限公司（Seer Robotics，以下简称 仙知）开发的多机器人调度系统。  仙知整合 RoboRoute 系统、Roboshop Pro 软件，以及 SRC2000 系列控制器，可针对多种类、多数量移动机器人复杂操作与协同配合的场景，提供快速、专业的整厂解决方案，以此提升工厂的整体作业效率。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image001.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image001.png?raw=true)
 
  
 
@@ -145,7 +145,7 @@ RoboRoute 服务器的主要配置：
 
 节点是离散的用于逻辑映射场景路线中机器人位置的元素。在操作模式下,机器人从场景中的一个点到另一点运行。节点分为:地标点和停靠点，其属性包含：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image002.png?raw=true)
 
 | 属性          | 描述                  | 属性          | 描述                  |
 | ------------- | --------------------- | ------------- | --------------------- |
@@ -162,7 +162,7 @@ RoboRoute 服务器的主要配置：
 
 地标点指机器人在处理业务订单时可能短暂停止的位置,例如执行工作站的操作,机器人在到达该位置时,会进行一系列的动作；或者机器人在场景中经过的一系列点位，地标点标识为灰色圆点。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image002.png?raw=true)
 
  
 
@@ -170,7 +170,7 @@ RoboRoute 服务器的主要配置：
 
 停靠点指机器人可在此较长时间停靠占用的位置，在没有未执行的业务订单时，机器人会自动寻找停靠点进行自动泊车，等待分配新的业务订单；如果机器人的电量处于低电量报警阈值之下，并且不存在空闲的充电点位，机器人也会回到停靠点，停靠点标识为蓝色圆点。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image003.png?raw=true)
 
  
 
@@ -178,7 +178,7 @@ RoboRoute 服务器的主要配置：
 
 工作站是机器人需要执行业务操作的站点，不可以单独存在，必须使用工作站连接将工作站和与之对应的地标点连接起来，根据工作站所属的类型不同，执行不同的操作；例如在工厂场景中需要进行物料流转、机器人工作交接配合等动作时，需要将该点设置为工作站，其属性包含：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image004.png?raw=true)
 
  
 
@@ -197,7 +197,7 @@ RoboRoute 服务器的主要配置：
 
 工作站连接是用于将工作站和与之对应的地标点进行绑定的工具，其属性包含：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image005.png?raw=true)
 
  
 
@@ -212,7 +212,7 @@ RoboRoute 服务器的主要配置：
 
 工作站类型用于区分不同的工作站所要执行的动作，根据工厂场景中需要完成的动作类型进行分类，将类型相同的动作存入同一个工作站类型中，其属性包含：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image006.png?raw=true)
 
  
 
@@ -227,7 +227,7 @@ RoboRoute 服务器的主要配置：
 
 路径是机器人可通航点之间的连接。其主要属性包含: 
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image007.png?raw=true)
 
  
 
@@ -254,7 +254,7 @@ RoboRoute 服务器的主要配置：
 
 机器人是整个场景中业务订单的执行者，机器人的名称要保证三处统一：机器人铭牌、Roboshop中机器人名称、RoboRoute中机器人名称，机器人具有以下属性：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image008.png?raw=true)
 
  
 
@@ -296,19 +296,19 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 ### 4.7 元素组
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image009.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image009.png?raw=true)
 
  
 
 在编辑模式下，选择工具栏新建元素组功能，出现如下对话框，选择需要添加到元素组中的场景元素，然后单击添加选中元素，将其添加到元素组中；
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image010.png?raw=true)
 
  
 
 元素组信息栏会显示您所添加的元素，如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image011.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image011.png?raw=true)
 
  
 
@@ -338,7 +338,7 @@ Kernel 是进行机器人管理以及核心功能实现的运算软件，分为�
 
 Kernel 菜单栏包含两个主要功能：Kernel 和帮助；Kernel 中包含模式切换操作、新建场景操作以及退出关闭操作；帮助中是关于软件的版权信息。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image012.png?raw=true)
 
  
 
@@ -346,7 +346,7 @@ Kernel 菜单栏包含两个主要功能：Kernel 和帮助；Kernel 中包含�
 
 Kernel 关键日志负责记录 Kernel 模式切换或者地图同步的状态信息，从中可以获取当前 Kernel 处在哪一种模式以及使用的场景。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image013.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image013.png?raw=true)
 
  
 
@@ -354,13 +354,13 @@ Kernel 关键日志负责记录 Kernel 模式切换或者地图同步的状态�
 
 机器人管理页面中包含 Kernel 当前场景中所有的机器人信息，机器人栏表示场景中全部的机器人，在是否可用栏选择是否启用该机器人，状态栏实时显示机器人的状态，可以在 State 栏中设置；适配器栏包含当前 Kernel 中可用的适配器，位置栏显示机器人当前所在场景中的位置，可以在机器人信息配置项中的 Pos 中设置；Energy 栏用于设置机器人当前的电量。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image014.png?raw=true)
 
  
 
 ### 5.4 Viewer 功能及布局
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image015.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image015.png?raw=true)
 
  Viewer界面包含所有的人机交互功能，在编辑模式下，可以使用工具栏进行场景元素的编辑，包括但不限于元素的添加、名称动作编辑、路线编辑、互斥区编辑等功能；在操作模式下，可以进行机器人的启动与暂停，手动书写订单，订单撤回等操作，详细使用请见各功能模块详解。
 
@@ -378,7 +378,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 文件操作：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image016.png?raw=true)
 
  
 
@@ -396,7 +396,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 编辑操作：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image017.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image017.png?raw=true)
 
  
 
@@ -414,7 +414,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 动作操作：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image018.png?raw=true)
 
  
 
@@ -427,7 +427,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 视图操作：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image019.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image019.png?raw=true)
 
  
 
@@ -449,7 +449,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 工具栏主要进行场景的编辑操作，进行场景元素的增删改查。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image020.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image020.png?raw=true)
 
  
 
@@ -466,7 +466,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.4 场景元素栏
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image021.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image021.png?raw=true)
 
  
 
@@ -474,7 +474,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.5 互斥区栏
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image022.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image022.png?raw=true)
 
  
 
@@ -482,7 +482,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.6 Kernel 关键日志
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image023.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image023.png?raw=true)
 
  
 
@@ -490,13 +490,13 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.7 场景视图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image024.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image024.png?raw=true)
 
  
 
 场景视图窗口是监控整个调度运行界面，它包含场景中的所有元素：机器人、工作站、工作站连接、停靠点、地标点、互斥区、路线等；场景视图工具栏如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image025.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image025.png?raw=true)
 
  
 
@@ -515,13 +515,13 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.8 业务订单视图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image026.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image026.png?raw=true)
 
  
 
 业务订单视图窗口用于显示全部的业务订单，字段具体含义详细见 8.3 小节。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image027.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image027.png?raw=true)
 
  
 
@@ -541,7 +541,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 5.4.9 业务订单序列视图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image028.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image028.png?raw=true)
 
  
 
@@ -577,23 +577,23 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 离线扫图即先扫描环境数据再进行地图构建。需要遥控机器人在环境中运行一圈后，再进行地图构建。
 
-点击模块工具栏中的开始扫图按钮 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image029.png)，图标变为 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image030.png)后说明已开始离线扫图。
+点击模块工具栏中的开始扫图按钮 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image029.png?raw=true)，图标变为 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image030.png?raw=true)后说明已开始离线扫图。
 
-手动操控机器人在环境中运行一遍，使机器人的激光雷达扫描到环境中的大部分区域。完成后使机器人停止，点击 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image031.png)后将弹出地图构建窗口，如下：
+手动操控机器人在环境中运行一遍，使机器人的激光雷达扫描到环境中的大部分区域。完成后使机器人停止，点击 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image031.png?raw=true)后将弹出地图构建窗口，如下：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image032.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image032.png?raw=true)
 
  
 
 建图参数配置中的参数一般不需要修改，点击确定按钮即开始构建地图。此时窗口中将复现刚才机器人的运动轨迹同时构建地图，当进度条读到 100% 后地图构建完毕，最终效果如下：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image033.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image033.png?raw=true)
 
  
 
 图中的红色轨迹即为机器人扫描地图时的运动轨迹。
 
-此时请勿关闭建图窗口，请点击右上角中的 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image034.png)按钮将构建的地图保存至计算机磁盘中。在弹出的保存对话框中可以对地图进行命名。
+此时请勿关闭建图窗口，请点击右上角中的 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image034.png?raw=true)按钮将构建的地图保存至计算机磁盘中。在弹出的保存对话框中可以对地图进行命名。
 
 **注****1****：** **在控制机器人扫描环境时，请保持与机器人的网络连接畅通。**
 
@@ -605,27 +605,27 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 实时扫图即同时进行环境数据的扫描和地图构建。遥控机器人在环境中运行一圈后即可生成地图。
 
-点击模块工具栏中的实时扫图按钮 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image035.png)，唤出实时建图窗口，如下图：
+点击模块工具栏中的实时扫图按钮 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image035.png?raw=true)，唤出实时建图窗口，如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image036.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image036.png?raw=true)
 
  
 
-点击 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image037.png)按钮，该按钮会变为 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image038.png)并建图参数配置对话框，同样不需要对参数进行修改，点击确定即开始实时扫图。
+点击 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image037.png?raw=true)按钮，该按钮会变为 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image038.png?raw=true)并建图参数配置对话框，同样不需要对参数进行修改，点击确定即开始实时扫图。
 
 此时请勿关闭实时建图窗口，用鼠标移动至工作空间的范围内并单击鼠标左键一下，目的是将软件的焦点切换回工作空间，这样才能够使用键盘快捷键控制机器人运动。通过键盘的W、A、S、D键控制机器人在环境中运动（与离线扫图相同）。随着机器人的运动，实时建图的窗口中会实时显示机器人的运动轨迹以及当前已经构建完毕的地图，如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image039.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image039.png?raw=true)
 
  
 
-当完成对环境的扫描后，点击 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image040.png)。此时程序将对地图做最后的优化后完成地图构建，最终效果如下：
+当完成对环境的扫描后，点击 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image040.png?raw=true)。此时程序将对地图做最后的优化后完成地图构建，最终效果如下：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image041.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image041.png?raw=true)
 
  
 
-点击 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image042.png)将构建的地图保存至计算机磁盘。
+点击 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image042.png?raw=true)将构建的地图保存至计算机磁盘。
 
 #### 6.1.4 加载地图
 
@@ -637,7 +637,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 若加载了地图，此时连接上机器人后，当前工作空间中的地图上将显示机器人，如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image043.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image043.png?raw=true)
 
  
 
@@ -645,15 +645,15 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 #### 6.1.5 导出 RoboRoute 地图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image044.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image044.png?raw=true)
 
-​                      ![1538989881122](C:\Users\dell\AppData\Local\Temp\1538989881122.png)
+​                      ![1538989881122](C:\Users\dell\AppData\Local\Temp\1538989881122.png?raw=true)
 
 使用 Roboshop 编辑完成整个场景中的路线之后，点击导出功能，选择导出 RoboRoute 地图，选择想要导出的路径，如果地图中线路全部为单向线，则将加入block前面的对勾去掉，然后将 Roboshop 的 smap 地图转换成 RoboRoute 的XML地图（ smap 地图编辑参考 Roboshop 使用手册）。 
 
 ### *6.2 使用 Roboshop Pro 软件融合场景文件
 
-![1538990123441](C:\Users\dell\AppData\Local\Temp\1538990123441.png)
+![1538990123441](C:\Users\dell\AppData\Local\Temp\1538990123441.png?raw=true)
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -663,7 +663,7 @@ RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
 ### *6.3 使用 Roboshop Pro 软件更新场景文件
 
-![1538990173451](C:\Users\dell\AppData\Local\Temp\1538990173451.png)
+![1538990173451](C:\Users\dell\AppData\Local\Temp\1538990173451.png?raw=true)
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -677,17 +677,17 @@ RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
 选择文件—>导入场景，在导入场景对话框中选择你要导入场景的路径，选择打开，场景自动加载到场景视图中。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image045.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image045.png?raw=true)
 
  
 
 ### 6.6 添加机器人
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image046.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image046.png?raw=true)
 
  
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image047.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image047.png?raw=true)
 
  
 
@@ -703,11 +703,11 @@ TODO
 
 ### 6.7 添加工作站信息
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image048.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image048.png?raw=true)
 
  
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image049.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image049.png?raw=true)
 
  
 
@@ -719,7 +719,7 @@ TODO
 
 ### 6.9 显示场景信息
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image050.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image050.png?raw=true)
 
  
 
@@ -741,13 +741,13 @@ TODO
 
 编辑完成的场景，或者最新导入的场景，都需要同步到 kernel 并且在 Kernel 中进行初始化之后才能使用，选择文件—>将场景同步至 Kernel 功能，Viewer 会在软件上方的连接信息中显示所连接到的 Kernel IP和端口号，如下图：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image051.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image051.png?raw=true)
 
  
 
 然后在 Kernel 中进行初始化操作，初始化完成后，在 Viewer 中选择文件—>模式—>操作模式，在经过一段非常美妙的动画之后，Viewer 会切换到操作模式，此时界面如下：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image052.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image052.png?raw=true)
 
  
 
@@ -759,7 +759,7 @@ TODO
 
 #### 6.12.1 单向路线
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image053.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image053.png?raw=true)
 
  
 
@@ -767,7 +767,7 @@ TODO
 
 #### 6.12.2 交叉路线设计
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image054.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image054.png?raw=true)
 
  
 
@@ -775,7 +775,7 @@ TODO
 
 #### 6.12.3 停靠点及工作站设计
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image055.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image055.png?raw=true)
 
  
 
@@ -787,29 +787,29 @@ TODO
 
 场景设计时我们推荐优先使用单向路线，但是例如充电点位或者特殊工作站，必须使用双向路线的情况，可以启用互斥区进行该区域的保护。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image056.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image056.png?raw=true)
 
  
 
 在工具栏选择互斥区功能，在信息栏会出现互斥区信息栏，如下图，在场景视图中选择想要添加到该互斥区的元素，然后在该互斥区名称上单击鼠标右键，弹出如下菜单栏，选择添加选中元素至互斥区，被选中元素即可被添加到该互斥区，互斥区颜色可以在信息栏的颜色选择器中进行选择。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image057.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image057.png?raw=true)
 
  
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image058.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image058.png?raw=true)
 
  
 
 添加到互斥区之后的场景视图变为如下图所示，颜色相同的为一个互斥区，例如：图中蓝色元素的部分为一个互斥区，红色元素部分为一个互斥区：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image059.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image059.png?raw=true)
 
  
 
 互斥区的生成规则：
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image060.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image060.png?raw=true)
 
  
 
@@ -823,7 +823,7 @@ TODO
 
 ### 7.1 使用 Roboshop Pro 软件配置机器人
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image061.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image061.png?raw=true)
 
  
 
@@ -839,45 +839,45 @@ TODO
 
 如下图所示：
 
- ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image062.png)
+ ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image062.png?raw=true)
 
 机器人的激光形状没有和地图匹配上，机器人的颜色为橘色说明置信度比较低，因此机器人当前的定位是不正确的。实际情况，机器人处于途中红色箭头标识处。
 
-点击 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image063.png)按钮，鼠标变成蓝色箭头状 ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image064.png)。在上图中红色箭头处的位置按下鼠标左键不松开，拖动鼠标拉出方向线，使方向线的朝向与上图中箭头的朝向一致，再松开鼠标左键，如图：
+点击 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image063.png?raw=true)按钮，鼠标变成蓝色箭头状 ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image064.png?raw=true)。在上图中红色箭头处的位置按下鼠标左键不松开，拖动鼠标拉出方向线，使方向线的朝向与上图中箭头的朝向一致，再松开鼠标左键，如图：
 
- ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image065.png)
+ ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image065.png?raw=true)
 
 此时会弹出正在重定位的对话框：
 
- ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image066.png)
+ ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image066.png?raw=true)
 
 稍等片刻重定位完成后得到如下效果：
 
- ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image067.png)
+ ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image067.png?raw=true)
 
 可以看到机器人的激光已经基本与地图匹配上，此时机器人的定位已经正确。重定位完成后同时会弹出确认位置正确的对话框，点击确定可将机器人定位的状态设置为正确。若点击取消，机器人的定位只是处于定位完成状态，此时仍是无法切换到自动模式的，因为必须将定位状态设置为正确才能切换到自动模式。
 
 如果定位完成后出现如下情况：
 
- ![标题: fig:](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image068.png)
+ ![标题: fig:](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image068.png?raw=true)
 
 可以看到，机器人的激光依然没有与地图匹配上，所以这次重定位是失败的，原因可能为点击的重定位点或者拖出的方向线与机器人实际的位置相差太远。此时在弹窗中不能点确定，而应该点取消，然后重新进行重定位操作。
 
 ### 7.4 使用 Roboshop Pro 软件释放控制权
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image069.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image069.png?raw=true)
 
  
 
 在 Roboshop 中将机器人放置到某个确定的点位，然后确认机器人定位正确后，单击释放控制权，使机器人自动去连接调度服务器，如果机器人的状态由UNAVAILABLE变为IDLE，表明连接成功，此时 Roboshop 无法控制机器人动作。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image070.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image070.png?raw=true)
 
  
 
 ### 7.5 使用 Roboshop Pro 软件回收控制权
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image071.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image071.png?raw=true)
 
  
 
@@ -885,7 +885,7 @@ TODO
 
 ### 7.6 使能机器人通信适配器
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image072.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image072.png?raw=true)
 
  
 
@@ -893,7 +893,7 @@ TODO
 
 ### 7.7 确认机器人位置
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image073.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image073.png?raw=true)
 
  
 
@@ -911,7 +911,7 @@ TODO
 
 1、使用创建业务订单功能：单击添加按钮，选择需要目的地工作站以及所要执行的动作，在机器人复选框中可以指定执行该业务订单的机器人，或者选择自动分配机器人。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image074.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image074.png?raw=true)
 
  
 
@@ -921,7 +921,7 @@ TODO
 
 ### 8.3 业务订单视图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image075.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image075.png?raw=true)
 
  
 
@@ -939,7 +939,7 @@ TODO
 
 #### 8.3.1 筛选业务订单列表
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image076.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image076.png?raw=true)
 
  
 
@@ -980,17 +980,17 @@ FAILED：订单合法，但是由于人为撤回订单或者调度自动撤回�
 
 按照订单名称撤回：选中您要撤回的一个或几个订单，然后单击撤回业务订单按钮，将订单撤回。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image077.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image077.png?raw=true)
 
  
 
 按照机器人撤回：在需要撤回订单的机器人图标上单击鼠标右键，弹出如下菜单栏，选择撤销业务订单，根据实际需求选择撤销订单的方式。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image078.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image078.png?raw=true)
 
  
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image079.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image079.png?raw=true)
 
  
 
@@ -1005,7 +1005,7 @@ FAILED：订单合法，但是由于人为撤回订单或者调度自动撤回�
 
 #### 8.4.1 查看业务订单序列状态
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image080.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image080.png?raw=true)
 
  
 
@@ -1017,7 +1017,7 @@ FAILED：订单合法，但是由于人为撤回订单或者调度自动撤回�
 
 ### 8.5 机器人视图
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image081.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image081.png?raw=true)
 
  
 
@@ -1027,9 +1027,9 @@ FAILED：订单合法，但是由于人为撤回订单或者调度自动撤回�
 
 | 图标                                                         | 释义                     | 图标                                                         | 释义               |
 | ------------------------------------------------------------ | ------------------------ | ------------------------------------------------------------ | ------------------ |
-| ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image082.png) | 正常机器人无负载状态     | ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image085.png) | 负载机器人正常状态 |
-| ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image083.png) | 故障机器人无负载状态     | ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image086.png) | 负载机器人故障状态 |
-| ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image084.png) | 正常机器人无负载充电状态 | ![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image087.png) | 负载机器人充电状态 |
+| ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image082.png?raw=true) | 正常机器人无负载状态     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image085.png?raw=true) | 负载机器人正常状态 |
+| ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image083.png?raw=true) | 故障机器人无负载状态     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image086.png?raw=true) | 负载机器人故障状态 |
+| ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image084.png?raw=true) | 正常机器人无负载充电状态 | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image087.png?raw=true) | 负载机器人充电状态 |
 
  
 
@@ -1071,7 +1071,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 #### 8.5.5 聚焦和跟踪机器人
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image088.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image088.png?raw=true)
 
  
 
@@ -1079,19 +1079,19 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 聚焦机器人：该机器人的图标颜色会发生如下变化，可以快速区分需要寻找的机器人；
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image089.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image089.png?raw=true)
 
  
 
 跟踪机器人：被跟踪的机器人会被动感光圈所环绕，在机器人行走的过程中，光圈会一直伴随其左右，便于人类发现该机器人；
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image090.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image090.png?raw=true)
 
  
 
 #### 8.5.6 派遣机器人至节点
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image091.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image091.png?raw=true)
 
  
 
@@ -1099,7 +1099,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 派遣至节点提供定点导航功能，选择派遣至节点后选择需要到达的点位，然后单击确定按钮，机器人会自动规划最优路径前往目标节点；
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image092.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image092.png?raw=true)
 
  
 
@@ -1109,19 +1109,19 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 派遣至工作站提供定点导航加执行动作功能，选择派遣制工作站后选择需要到达的工作站并指定到达该工作站后需要进行的动作，然后单击确定按钮，机器人会自动规划最优路径前往目标工作站；
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image093.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image093.png?raw=true)
 
  
 
 #### 8.5.8 更改机器人在线状态
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image091.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image091.png?raw=true)
 
  
 
 在机器人图标上单击右键，弹出如上图菜单。
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image094.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image094.png?raw=true)
 
  
 
@@ -1136,7 +1136,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 ####  8.5.9 一键暂停所有机器人
 
-![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png)
+![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png?raw=true)
 
 在操作模式下，工具栏最右侧红色按钮是一键暂停所有机器人操作，在遇到紧急情况需要将所有机器人立刻暂停时使用。
 
@@ -1144,33 +1144,33 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 1. 双击桌面 StartAll 文件，将 redis、Kernel、Viewer 全部启动；
 
-   ![1539053537145](C:\Users\dell\AppData\Local\Temp\1539053537145.png)
+   ![1539053537145](C:\Users\dell\AppData\Local\Temp\1539053537145.png?raw=true)
 
 2. 在 Viewer 中导入场景，并将该场景同步到 Kernel 中；
 
-   ![1539053724219](C:\Users\dell\AppData\Local\Temp\1539053724219.png)
+   ![1539053724219](C:\Users\dell\AppData\Local\Temp\1539053724219.png?raw=true)
 
 3. 在 Kernel 中初始化场景，将需要使用的机器人勾选，选择适配器，并为每个机器人初始化位置，此时如果机器人连接调度服务器成功状态会变为IDLE，否则状态为UNAVAILABLE，此时使用 RoboShop 检查是否释放控制权成功；
 
-   ![1539053829689](C:\Users\dell\AppData\Local\Temp\1539053829689.png)
+   ![1539053829689](C:\Users\dell\AppData\Local\Temp\1539053829689.png?raw=true)
 
 4. 在 Viewer 中将模式切换到操作模式，确认机器人所在点位正确后，使用一键派遣所有机器人功能将机器人在线状态全部置为在线可用；
 
-   ![1539054022466](C:\Users\dell\AppData\Local\Temp\1539054022466.png)
+   ![1539054022466](C:\Users\dell\AppData\Local\Temp\1539054022466.png?raw=true)
 
 5. 此时机器人等待MES发送业务订单，在接收到订单后会自动进行订单分配以及机器人派遣，双击运行MES程序，可以在业务订单视图看到已经接收到订单，并分配给机器人，图中不同颜色的路线为不同机器人将要运行的路线；
 
-   ![1539054529923](C:\Users\dell\AppData\Local\Temp\1539054529923.png)
+   ![1539054529923](C:\Users\dell\AppData\Local\Temp\1539054529923.png?raw=true)
 
-   ![1539054558643](C:\Users\dell\AppData\Local\Temp\1539054558643.png)
+   ![1539054558643](C:\Users\dell\AppData\Local\Temp\1539054558643.png?raw=true)
 
 6. 撤销某一台机器人当前执行的业务订单，示例如下：在AMB-300-1808-01机器人图标上单击右键，选择撤销业务订单功能，在二级菜单中选择并立即停止机器人，此时该机器人规划好的行驶路线会消失，机器人状态变为IDLE，等待新的业务订单分配；
 
-   ![1539055149155](C:\Users\dell\AppData\Local\Temp\1539055149155.png)
+   ![1539055149155](C:\Users\dell\AppData\Local\Temp\1539055149155.png?raw=true)
 
 7. 当遇到紧急情况需要立即停止全部机器人时，单击工具栏暂停所有机器人按钮即可；
 
-   ![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png)
+   ![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png?raw=true)
 
 ## 九、RoboRoute 配置（公司内部人员，以及集成商使用）
 
@@ -1200,7 +1200,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 ### 10.1 订单统计
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image095.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image095.png?raw=true)
 
  
 
@@ -1237,7 +1237,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 ### 10.2 随机订单测试
 
-![img](file:///C:/Users/dell/AppData/Local/Temp/msohtmlclip1/01/clip_image096.png)
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image096.png?raw=true)
 
  
 
