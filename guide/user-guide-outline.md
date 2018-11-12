@@ -276,13 +276,13 @@ UNAVAILABLE：机器人未释放控制权给 RoboRoute，或机器人连接调�
 
 IDLE：机器人已连接到 RoboRoute，并处于空闲状态；
 
-ERROR：机器人故障或执行任务失败出现异常；
+ERROR：机器人故障，或执行任务时出现异常；
 
-EXECUTING：机器人在线，并且正在执行业务订单，处于执行状态；
+EXECUTING：机器人正在执行业务；
 
-CHARGING：机器人在线，并且正在执行充电操作，处于执行状态；
+CHARGING：机器人正在充电；
 
-UNKNOWN：机器人不属于场景之中，处于不可用状态；
+UNKNOWN：机器人不存在于场景之中；
 
 机器人在线状态：
 
