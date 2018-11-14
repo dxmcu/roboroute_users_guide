@@ -157,7 +157,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.1 节点
 
-节点是用于逻辑映射场景路线中关键位置的元素。在 RoboRoute 操作模式下，机器人总是从场景中的一个节点到另一节点运行。节点分为：地标点和停靠点，其属性如下所述：
+节点（Point）是用于逻辑映射场景路线中关键位置的元素。在 RoboRoute 操作模式下，机器人总是从场景中的一个节点到另一节点运行。节点分为：地标点和停靠点，其属性如下所述：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image002.png?raw=true)
 
@@ -172,7 +172,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 #### 4.1.1 地标点
 
-在 RoboRoute 中，地标点是机器人处理业务订单时可能短暂停留的节点，机器人在到达该节点时，执行工作站的操作；或者机器人在行进路线中经过的一系列节点。地标点标识为灰色圆点。
+在 RoboRoute 中，地标点（Land Mark）是机器人处理业务订单时可能短暂停留的节点，机器人在到达该节点时，执行工作站的操作；或者机器人在行进路线中经过的一系列节点。地标点标识为灰色圆点。
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image002.png?raw=true)
 
@@ -180,7 +180,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 #### 4.1.2 停靠点
 
-停靠点是供业务空闲的机器人停靠和待机的节点。机器人执行完毕当前的业务后，若没有新的业务被分配，会前往附近没有被占用的停靠点，等待新的业务订单。如果机器人的电量低于报警阈值，且此时不存在空闲的充电站，机器人也会前往停靠点，但不再接受新的业务订单。停靠点标识为蓝色圆点。
+停靠点（Park Point）是供业务空闲的机器人停靠和待机的节点。机器人执行完毕当前的业务后，若没有新的业务被分配，会前往附近没有被占用的停靠点，等待新的业务订单。如果机器人的电量低于报警阈值，且此时不存在空闲的充电站，机器人也会前往停靠点，但不再接受新的业务订单。停靠点标识为蓝色圆点。
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image003.png?raw=true)
 
@@ -188,7 +188,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.2 工作站
 
-工作站是机器人需要进行业务操作的站点，不可以单独存在，必须使用工作站连接将其和节点关联起来。工作站限定了机器人在该处的工作内容。其属性包含：
+工作站（Location）是机器人需要进行业务操作的站点，不可以单独存在，必须使用工作站连接将其和节点关联起来。工作站限定了机器人在该处的工作内容。其属性包含：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image004.png?raw=true)
 
@@ -207,7 +207,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.3 工作站连接
 
-工作站连接是用于将工作站和节点进行关联的工具，其属性包含：
+工作站连接（Link）是用于将工作站和节点进行关联的工具，其属性包含：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image005.png?raw=true)
 
@@ -226,7 +226,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.4 工作站类型
 
-工作站类型是一个工作站唯一且必需的元素，其主要定义了一组机器人允许执行的操作。其属性包含：
+工作站类型（Location Type）是一个工作站唯一且必需的元素，其主要定义了一组机器人允许执行的操作。其属性包含：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image006.png?raw=true)
 
@@ -241,22 +241,22 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.5 路径
 
-路径是两个节点之间的有向连接线。其主要属性包含: 
+路径（Path）是两个节点之间的有向连接线。其主要属性包含: 
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image007.png?raw=true)
 
  
 
-| 属性         | 描述                         | 属性         | 描述                               |
-| ------------ | ---------------------------- | ------------ | ---------------------------------- |
-| 名称         | 路径的全局唯一ID             | 路径曲线类型 | 直线，或者贝塞尔曲线               |
-| 长度         | 路径在场景中的长度           | 曲线控制点   | 只有贝塞尔曲线存在控制点           |
-| 路径成本     | 路径在路线规划中的成本系数   | 起始元素     | 路径起点                           |
-| 最大正向速度 | 路径上允许的最大正向行走速度 | 终点元素     | 路径终点                           |
-| 最大反向速度 | 路径上允许的最大反向行走速度 | 锁定路径     | 锁定路径，令机器人无法规划至该路径 |
-| 元属性       | 用户自定义的键值型属性       |              |                                    |
+| 属性         | 描述                         | 属性         | 描述                     |
+| ------------ | ---------------------------- | ------------ | ------------------------ |
+| 名称         | 路径的全局唯一ID             | 路径曲线类型 | 直线，或者贝塞尔曲线     |
+| 长度         | 路径在场景中的长度           | 曲线控制点   | 只有贝塞尔曲线存在控制点 |
+| 路径成本     | 路径在路线规划中的成本系数   | 起始元素     | 路径起点                 |
+| 最大正向速度 | 路径上允许的最大正向行走速度 | 终点元素     | 路径终点                 |
+| 最大反向速度 | 路径上允许的最大反向行走速度 | 锁定路径     | 锁定路径                 |
+| 元属性       | 用户自定义的键值型属性       |              |                          |
 
- 
+ 若一条路径因故无法通行，可以在系统运行时勾选“锁定路径”，令机器人规划路线时避开此路径。
 
 #### 4.5.1 直线
 
@@ -268,7 +268,7 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 4.6 机器人
 
-机器人是场景中业务订单的执行者，机器人的全局唯一ID要在三处保证统一：机器人铭牌上的ID标识、Roboshop 中定义的名称、RoboRoute 场景中定义的名称。机器人具有以下属性：
+机器人（Robot）是场景中业务订单的执行者，机器人的全局唯一ID要在三处保证统一：机器人铭牌上的ID标识、Roboshop 中定义的名称、RoboRoute 场景中定义的名称。机器人具有以下属性：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image008.png?raw=true)
 
@@ -335,13 +335,26 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 - 如果业务订单中指定了业务类型（category），那么机器人必须在“可执行的业务类型”中包含订单中的业务类型，才有资格接受该业务订单。
 
 - 当机器人需要进行自主充电时，场景中必须至少存在一个充电工作站，其 operation 中包含其“自主充电类型”。
-### 4.7 元素组
+### 4.7 互斥区
 
-![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image009.png?raw=true)
+互斥区（Block）是一个场景元素的集合，如果机器人占用了互斥区中的任何一个元素，将被视为占用了互斥区的全部元素。即机器人在互斥区中是互斥的。在布局中互斥区栏如下图所示。
 
- 
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image022.png?raw=true)
 
-在编辑模式下，选择工具栏新建元素组功能，出现如下对话框，选择需要添加到元素组中的场景元素，然后单击添加选中元素，将其添加到元素组中；
+ 互斥区的属性如下所述：
+
+| 属性       | 描述                     |
+| ---------- | ------------------------ |
+| 名称       | 互斥区的全局唯一ID       |
+| 互斥区颜色 | 互斥区在场景中表现的颜色 |
+| 互斥区元素 | 互斥区包含的元素         |
+| 元属性     | 用户自定义的键值型属性   |
+
+
+
+### 4.8 元素组
+
+在 Viewer 编辑模式下，点击工具栏"新建元素组"按钮，出现如下对话框。选择需要添加到元素组（Group）中的场景元素，然后单击添加选中元素，可将其添加到元素组中。
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image010.png?raw=true)
 
@@ -351,13 +364,9 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image011.png?raw=true)
 
- 
+ 使用元素组，可以方便在大型场景中选取关键元素。
 
- 
 
-### 4.8 元属性
-
-TODO
 
 ## 五、入门
 
@@ -521,7 +530,9 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 互斥区（Block）是只允许一台机器人在该设定区域内进行操作的场景元素集合，当一台机器人进入该互斥区时，如果其他机器人前进路线包含该区域中的元素，那么这些机器人会在互斥区之外最近的地标点进行等候，直到互斥区中的机器人执行完操作并驶离该互斥区。
 
-#### 5.4.6 Kernel 关键日志
+#### 5.4.6 元素组栏
+
+#### 5.4.7 Kernel 关键日志
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image023.png?raw=true)
 
@@ -529,7 +540,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 显示 Kernel 中的关键日志信息，例如 Kernel 的状态改变，导入的场景地图的改变都会显示在 Kernel 信息栏。
 
-#### 5.4.7 场景视图
+#### 5.4.8 场景视图
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image024.png?raw=true)
 
@@ -554,7 +565,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
  
 
-#### 5.4.8 业务订单视图
+#### 5.4.9 业务订单视图
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image026.png?raw=true)
 
@@ -580,7 +591,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等功能：
 
 **注释**：非必要订单：如果该订单被置为非必要订单，那么在机器人执行过程中如果有新的未执行业务订单存在，会优先执行其他业务订单，该非必要业务订单会自动流产。
 
-#### 5.4.9 业务订单序列视图
+#### 5.4.10 业务订单序列视图
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image028.png?raw=true)
 
