@@ -372,17 +372,17 @@ RoboRoute 服务器的初始账户为：RoboRoute，初始密码为：roboroute
 
 ### 5.1 启动 RoboRoute
 
-双击桌面上的 StartAll 文件，会将 redis、Kernel、Viewer 全部自启。
+双击桌面上的 StartRoboRoute.bat 文件，会启动 Kernel、Viewer 以及其他系统组件。
 
-### 5.2关闭 RoboRoute
+### 5.2 关闭 RoboRoute
 
-点击Kernel右上角的关闭按钮或者运行shutdownKernel.bat文件可以关闭Kernel；点击Viewer右上角的关闭按钮可以关闭Viewer。
+双击桌面上的 CloseRoboRoute.bat 文件，即可关闭 RoboRoute。
 
 ### 5.3 Kernel 功能及布局
 
 #### 5.3.1 Kernel 模式
 
-Kernel 是进行机器人管理以及核心功能实现的运算软件，分为编辑模式和操作模式。编辑模式可以新建一个空白场景，该场景中不存在任何场景元素，可以在Viewer中使用导入 Kernel 当前场景来编辑该空白场景；操作模式是 Kernel 工作时的运行模式。Kernel 的模式会根据 Viewer 的模式自动切换，不需要手动设置。
+Kernel 是 RoboRoute 系统的核心程序，包含两个运行模式：编辑模式和操作模式。编辑模式下，Kernel 仅可以使用 Viewer 软件切换或者同步场景；操作模式下，Kernel 将以当前载入的场景为基础，开启全部的业务逻辑及访问服务，是 RoboRoute 系统的工作模式。Kernel 的运行模式一般不需要手动设置。
 
 #### 5.3.2 菜单栏
 
@@ -394,7 +394,7 @@ Kernel 菜单栏包含两个主要功能：Kernel 和帮助；Kernel 中包含�
 
 #### 5.3.3 关键日志页面
 
-Kernel 关键日志负责记录 Kernel 模式切换或者地图同步的状态信息，从中可以获取当前 Kernel 处在哪一种模式以及使用的场景。
+Kernel 关键日志负责记录 Kernel 模式切换或者地图同步相关的信息。
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image013.png?raw=true)
 
@@ -402,7 +402,9 @@ Kernel 关键日志负责记录 Kernel 模式切换或者地图同步的状态�
 
 #### 5.3.4 机器人管理页面
 
-机器人管理页面中包含 Kernel 当前场景中所有的机器人信息，机器人栏表示场景中全部的机器人，在是否可用栏选择是否启用该机器人，状态栏实时显示机器人的状态，可以在 State 栏中设置；适配器栏包含当前 Kernel 中可用的适配器，位置栏显示机器人当前所在场景中的位置，可以在机器人信息配置项中的 Pos 中设置；Energy 栏用于设置机器人当前的电量。
+机器人管理页面中包含当前场景中的机器人列表。其中，“适配器”指机器人和 RoboRoute 系统间的通信组件。勾选“是否可用？”复选框，可控制机器人适配器在 Kernel 中的使能状态。
+
+在 RoboRoute 仿真 Kernel （需要仙知特别提供）中，利用下图右侧的“机器人信息”栏，可以在线编辑机器人在场景中的位置和状态。而在真实的 RoboRoute 中，“机器人信息”栏只显示信息，不支持编辑。
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image014.png?raw=true)
 
@@ -943,11 +945,7 @@ TODO
 
 在适配器栏选择机器人使用的适配器，然后在是否可用栏勾选可用，该适配器即生效。
 
-### 7.7 确认机器人位置
-
-![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image073.png?raw=true)
-
- 
+### 7.7 确认机器人位置 
 
 在 Kernel 中确认机器人位置，该位置与机器人实际位置必须一致。
 
@@ -1014,7 +1012,7 @@ TODO
 
 Active：订单存在依赖，需要等待被依赖订单处理完成后才能进行派遣；
 
-Unrouteable：订单非法，起始点位无法到达，路径无法规划；
+UNROUTEABLE：订单非法，起始点位无法到达，路径无法规划；
 
 DISPATCHABLE：单例订单，且订单合法，允许派遣机器人；
 
@@ -1194,7 +1192,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 ### 8.6 典型操作流程
 
-1. 双击桌面 StartAll 文件，将 redis、Kernel、Viewer 全部启动；
+1. 双击桌面 StartAll 文件启动 RoboRoute；
 
    ![1539053537145](C:\Users\dell\AppData\Local\Temp\1539053537145.png?raw=true)
 
@@ -1326,7 +1324,7 @@ RoboRoute 是上海仙知机器人科技有限公司（Seer Robotics，以下简
 | Vehicle        | 机器人     | 场景中的所有类型机器人统称         |
 | OrderSequence  | 订单序列   | 多个业务订单可以组合成一个订单序列 |
 | Point          | 节点       | 节点是地标点和停靠点的统称         |
-| Halt   Point   | 地标点     | 标识为灰色圆点                     |
+| Land Park      | 地标点     | 标识为灰色圆点                     |
 | Park   Point   | 停靠点     | 标识为蓝色圆点                     |
 
 ### 11.3 快捷键
