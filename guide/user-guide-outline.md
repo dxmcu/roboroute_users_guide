@@ -708,7 +708,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等项目：
 
 ### *6.2 使用 Roboshop Pro 软件融合场景文件
 
-
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/6.2.1.png?raw=true)
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -718,7 +718,7 @@ RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
 ### *6.3 使用 Roboshop Pro 软件更新场景文件
 
-
+![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/6.2.2.png?raw=true)
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -1189,11 +1189,11 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 1. 双击桌面 StartAll 文件启动 RoboRoute；
 
-   
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/8.6.1.png?raw=true)
 
 2. 在 Viewer 中导入场景，并将该场景同步到 Kernel 中；
 
-   
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/8.6.2.png?raw=true)
 
 3. 在 Kernel 中初始化场景，将需要使用的机器人勾选，选择适配器，并为每个机器人初始化位置，此时如果机器人连接调度服务器成功状态会变为IDLE，否则状态为UNAVAILABLE，此时使用 RoboShop 检查是否释放控制权成功；
 
@@ -1205,7 +1205,7 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 
 5. 此时机器人等待MES发送业务订单，在接收到订单后会自动进行订单分配以及机器人派遣，双击运行MES程序，可以在业务订单视图看到已经接收到订单，并分配给机器人，图中不同颜色的路线为不同机器人将要运行的路线；
 
-   
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/8.6.5.png?raw=true)
 
 6. 撤销某一台机器人当前执行的业务订单，示例如下：在AMB-300-1808-01机器人图标上单击右键，选择撤销业务订单功能，在二级菜单中选择并立即停止机器人，此时该机器人规划好的行驶路线会消失，机器人状态变为IDLE，等待新的业务订单分配；
 
