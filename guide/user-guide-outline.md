@@ -706,7 +706,7 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等项目：
 
 ### *6.2 使用 Roboshop Pro 软件融合场景文件
 
-![1538990123441](C:\Users\dell\AppData\Local\Temp\1538990123441.png?raw=true)
+
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -716,7 +716,7 @@ RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
 ### *6.3 使用 Roboshop Pro 软件更新场景文件
 
-![1538990173451](C:\Users\dell\AppData\Local\Temp\1538990173451.png?raw=true)
+
 
 RoboRoute 地图导出路径：RoboRoute 地图最终存放的位置；
 
@@ -1183,43 +1183,33 @@ UNKNOWN：机器人不属于场景之中，处于不可用状态；
 | 仅将机器人载入场景   | 将移除的机器人重新载入场景并占用当前位置，在线状态为在线不可用 |
 | 将机器人置为在线状态 | 将机器人连接到调度服务器，并可以接受业务订单派遣，在线状态为在线可用 |
 
-####  8.5.9 一键暂停所有机器人
-
-![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png?raw=true)
-
-在操作模式下，工具栏最右侧红色按钮是一键暂停所有机器人操作，在遇到紧急情况需要将所有机器人立刻暂停时使用。
-
 ### 8.6 典型操作流程
 
 1. 双击桌面 StartAll 文件启动 RoboRoute；
 
-   ![1539053537145](C:\Users\dell\AppData\Local\Temp\1539053537145.png?raw=true)
+   
 
 2. 在 Viewer 中导入场景，并将该场景同步到 Kernel 中；
 
-   ![1539053724219](C:\Users\dell\AppData\Local\Temp\1539053724219.png?raw=true)
+   
 
 3. 在 Kernel 中初始化场景，将需要使用的机器人勾选，选择适配器，并为每个机器人初始化位置，此时如果机器人连接调度服务器成功状态会变为IDLE，否则状态为UNAVAILABLE，此时使用 RoboShop 检查是否释放控制权成功；
 
-   ![1539053829689](C:\Users\dell\AppData\Local\Temp\1539053829689.png?raw=true)
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image014.png?raw=true)
 
 4. 在 Viewer 中将模式切换到操作模式，确认机器人所在点位正确后，使用一键派遣所有机器人功能将机器人在线状态全部置为在线可用；
 
-   ![1539054022466](C:\Users\dell\AppData\Local\Temp\1539054022466.png?raw=true)
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image016.png?raw=true)
 
 5. 此时机器人等待MES发送业务订单，在接收到订单后会自动进行订单分配以及机器人派遣，双击运行MES程序，可以在业务订单视图看到已经接收到订单，并分配给机器人，图中不同颜色的路线为不同机器人将要运行的路线；
 
-   ![1539054529923](C:\Users\dell\AppData\Local\Temp\1539054529923.png?raw=true)
-
-   ![1539054558643](C:\Users\dell\AppData\Local\Temp\1539054558643.png?raw=true)
+   
 
 6. 撤销某一台机器人当前执行的业务订单，示例如下：在AMB-300-1808-01机器人图标上单击右键，选择撤销业务订单功能，在二级菜单中选择并立即停止机器人，此时该机器人规划好的行驶路线会消失，机器人状态变为IDLE，等待新的业务订单分配；
 
-   ![1539055149155](C:\Users\dell\AppData\Local\Temp\1539055149155.png?raw=true)
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image091.png?raw=true)
 
-7. 当遇到紧急情况需要立即停止全部机器人时，单击工具栏暂停所有机器人按钮即可；
-
-   ![1538991758686](C:\Users\dell\AppData\Local\Temp\1538991758686.png?raw=true)
+   ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image094.png?raw=true)
 
 ## 九、RoboRoute 配置（公司内部人员，以及集成商使用）
 
