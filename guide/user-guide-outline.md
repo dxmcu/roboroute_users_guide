@@ -500,18 +500,18 @@ Viewer 菜单栏包括文件、编辑、动作、视图、帮助等项目：
 
 ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/clip_image020.png?raw=true)
 
-| 工具       | 图标 | 功能                                                 |
-| ---------- | ---- | ---------------------------------------------------- |
-| 选择       |      | 选取场景中的元素                                     |
-| 拖拽       |      | 拖拽场景位于视图窗口中的位置                         |
-| 节点       |      | 添加节点，在下拉选项中包括：地标点，停靠点           |
-| 工作站     |      | 添加工作站                                           |
-| 路径       |      | 添加路径，在下拉选项中包括：直线，2-Bezier，3-Bezier |
-| 工作站连接 |      | 添加工作站链接                                       |
-| 工作站类型 |      | 添加工作站类型                                       |
-| 机器人     |      | 添加机器人                                           |
-| 互斥区     |      | 新建互斥区                                           |
-| 元素组     |      | 新建元素组                                           |
+| 工具       | 图标                                                         | 功能                                                         |
+| ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 选择       | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 选取场景中的元素                                             |
+| 拖拽       | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/cursor-opened-hand.png?raw=true) | 拖拽场景位于视图窗口中的位置                                 |
+| 节点       | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/point-halt-arrow.22.png?raw=true) | 添加节点，在下拉选项中包括：地标点![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/point-halt-arrow.22.png?raw=true)，停靠点![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/point-park-arrow.22?raw=true) |
+| 工作站     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 添加工作站                                                   |
+| 路径       | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 添加路径，在下拉选项中包括：直线，2-Bezier，3-Bezier         |
+| 工作站连接 | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 添加工作站链接                                               |
+| 工作站类型 | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 添加工作站类型                                               |
+| 机器人     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 添加机器人                                                   |
+| 互斥区     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 新建互斥区                                                   |
+| 元素组     | ![img](https://github.com/qunge12345/roboroute_users_guide/blob/master/pictures/01/select-2.png?raw=true) | 新建元素组                                                   |
 
 
 
