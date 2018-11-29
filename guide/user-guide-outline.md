@@ -829,11 +829,12 @@ TODO
 
 互斥区的生成规则：
 
-![img](../pictures/01/clip_image060.png)
-
- 
-
- 
+| 规则                                                         | 示例                                                         | 示例解析                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 一个点周围均为单向线可以不添加block，但是必须至少一进一出    | ![img](../pictures/01/block1.png)                            | 图中车辆汇合点，满足条件1，所以可以不添加block               |
+| 双向线两端的点和中间的path自动添加到block                    | ![img](../pictures/01/block2.1.png)![img](../pictures/01/block2.2.png) | 图中的所有双向线和两端的point均添加block                     |
+| 工作站短暂停靠可以使用双向线，长时间阻挡就必须画成单向线（附：工作站单向线画法） | ![img](../pictures/01/block3.1.png)![img](../pictures/01/block3.2.png) | 左图上为短暂停靠，可以使用双向线；左图下为长时间工作必须使用单向线 |
+| 线路交叉必须设置交叉点point                                  | ![img](../pictures/01/block4.png)                            | 图中十字路口交叉必须做成相交线，包含交叉点point              |
 
 #### 6.12.5有向强连通图
 
@@ -986,11 +987,11 @@ TODO
 
 #### 8.5.1 机器人图标说明
 
-| 图标                                     | 释义                     | 图标                                     | 释义               |
-| ---------------------------------------- | ------------------------ | ---------------------------------------- | ------------------ |
-| ![img](../pictures/01/clip_image082.png) | 正常机器人无负载状态     | ![img](../pictures/01/clip_image085.png) | 负载机器人正常状态 |
-| ![img](../pictures/01/clip_image083.png) | 故障机器人无负载状态     | ![img](../pictures/01/clip_image086.png) | 负载机器人故障状态 |
-| ![img](../pictures/01/clip_image084.png) | 正常机器人无负载充电状态 | ![img](../pictures/01/clip_image087.png) | 负载机器人充电状态 |
+| 图标                                         | 释义                     | 图标                                       | 释义               |
+| -------------------------------------------- | ------------------------ | ------------------------------------------ | ------------------ |
+| ![img](../pictures/01/unloaded_normal.png)   | 正常机器人无负载状态     | ![img](../pictures/01/loaded_normal.png)   | 负载机器人正常状态 |
+| ![img](../pictures/01/unloaded_error.png)    | 故障机器人无负载状态     | ![img](../pictures/01/loaded_error.png)    | 负载机器人故障状态 |
+| ![img](../pictures/01/unloaded_charging.png) | 正常机器人无负载充电状态 | ![img](../pictures/01/loaded_charging.png) | 负载机器人充电状态 |
 
  
 
@@ -1242,37 +1243,61 @@ RoboRoute 是上海仙知机器人科技有限公司（Seer Robotics，以下简
 | 编辑模式           | Alt   + M         |
 | 操作模式           | Alt   + O         |
 
-### 11.4 修订历史
+### 11.4 动作属性列表
+
+| 动作                    | Key1               | value1                                                       | 是否必需     |
+| ----------------------- | ------------------ | ------------------------------------------------------------ | ------------ |
+| RollerLoad/RollerUnload | direction          | left/right                                                   | **required** |
+| RollerLoad/RollerUnload | recoginze          | true/false                                                   | optional     |
+| JackLoad/JackUnload     | recognize          | true/false                                                   | **required** |
+| ForkLoad/ForkUnload     | end_height         | String of height                                             | optional     |
+| ForkLoad/ForkUnload     | layer              | "0" ：bottom / "-1" ：top                                    | optional     |
+| ForkLoad/ForkUnload     | start_height       | String of height                                             | optional     |
+| ForkLoad/ForkUnload     | recoginze          | true/false                                                   | optional     |
+| SetDO                   | string of DO index | true/false                                                   | repeated     |
+| Wait                    | duration           | String of positive integer or 0 （ms）                       | optional     |
+| Wait                    | orientation        | String.(-180~180)                                            | optional     |
+| WaitKey                 | string of DI index | 0/1  "0" means the vehicle should keep waiting until di state change to "1" | **required** |
+| WaitKey                 | timeout            | string of positive integer (ms)                              | optional     |
+| ArmReset                |                    |                                                              |              |
+| GraspLoad / GraspUnload | from               | String of location                                           | **required** |
+| GraspLoad / GraspUnload | to                 | String of location                                           | **required** |
+| GraspLoad / GraspUnload | remark             | string of param, e.g. "0" or "1" and so on                   | **required** |
+|                         |                    |                                                              |              |
+
+
+
+### 11.5 修订历史
 
 | 文件版本 | 发布时间 | 更新描述 | 软件版本      |
 | -------- | -------- | -------- | ------------- |
 |          |          |          | RoboRoute_1.0 |
 
-### 11.5 Web API 链接
+### 11.6 Web API 链接
+
+https://www.seer-robotics.com/plug-in/RoboRoute/index.html
+
+### 11.7 FAQ 链接
 
 TODO
 
-### 11.6 FAQ 链接
+### 11.8 联系我们
 
-TODO
-
-### 11.7 联系我们
-
-网站: [*www.seer-robotics.com*](http://www.seer-robotics.com/)
+网站: [*www.seer-robotics.com*
 
 地址: 上海市浦东新区金桥镇金领之都7号楼203室
 
-邮箱: [*contact@seer-robotics.com*](mailto:contact@seer-robotics.com)
+邮箱: [*contact@seer-robotics.com*
 
-技术支持: [*support@seer-robotics.com*](mailto:support@seer-robotics.com)
+技术支持: [*support@seer-robotics.com*
 
-商务合作: [*zhangsui@seer-robotics.com*](mailto:zhangsui@seer-robotics.com)
+商务合作: [*zhangsui@seer-robotics.com*
 
-技术咨询: [*yys@seer-robotics.com*](mailto:yys@seer-robotics.com)
+技术咨询: [*yys@seer-robotics.com*
 
 电话: 400-061-6660 / 086-021-61112205
 
-### 11.8 版权声明
+### 11.9 版权声明
 
 本手册会定期进行检查和修正，更新后的内容将出现在新版本中。本手册中的内容或信息如有变更，恕不另行通知。
 
